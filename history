@@ -1,55 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>History of Riverbend</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History of New Grove</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="city-info-page">
 
-<body>
+  <div class="header-image">
+    <div class="card-nav">
+      <a href="index.html">Home</a>
+      <a href="map.html">Map</a>
+      <a href="climate.html">Climate & Location</a>
+      <a href="history.html">History</a>
+      <a href="demographics.html">Demographics</a>
+      <a href="poi.html">Points of Interest</a>
+      <a href="university.html">Riverbend University</a>
+    </div>
+  </div>
 
-<header>
-<h1>History of Riverbend</h1>
-</header>
+  <div class="main-content-wrapper">
+    <div class="main-columns">
 
-<nav>
-<a href="index.html">Home</a>
-<a href="map.html">Map</a>
-<a href="climate.html">Climate & Location</a>
-<a href="history.html">History</a>
-<a href="demographics.html">Demographics</a>
-<a href="poi.html">Points of Interest</a>
-<a href="university.html">Riverbend University</a>
-</nav>
+      <div class="main-content">
+        <h1>History of New Grove</h1>
+        <h2>Early Settlement</h2>
+        <p>Founded as a river trading post in the early 1800s, New Grove grew quickly due to its strategic location.</p>
 
-<div class="container">
+        <h2>Industrial Expansion</h2>
+        <p>The late 19th century brought railroads, factories, and river docks, fueling rapid population growth.</p>
 
-<h2>Early Settlement</h2>
+        <h2>Modern Era</h2>
+        <p>Today, New Grove is a regional center for culture, education, and technology.</p>
+      </div>
 
-<p>
-Riverbend began as a trading settlement in the early 1800s due to its strategic
-position along the Silver River trade route.
-</p>
+      <div class="sidebar-content">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="climate.html">Climate & Location</a></li>
+        </ul>
+      </div>
 
-<h2>Industrial Growth</h2>
+    </div>
+  </div>
 
-<p>
-During the late 19th century the city expanded rapidly as railways
-connected Riverbend to major regional markets.
-Factories and river docks became the economic core of the city.
-</p>
-
-<h2>Modern Era</h2>
-
-<p>
-Today Riverbend has transitioned into a regional center for
-education, technology, and cultural activity.
-</p>
-
-</div>
-
-<footer>
-Riverbend City Lore Project
-</footer>
+  <footer>
+    &copy; 2026 New Grove City Lore Project
+  </footer>
 
 </body>
 </html>
