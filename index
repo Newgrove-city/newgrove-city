@@ -3,50 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Grove City</title>
+  <title>Riverbend University / New Grove</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="index-page">
 
-  <!-- HEADER IMAGE + NAVIGATION -->
-  <div class="header-image">
-    <div class="card-nav">
-      <a href="index.html">Home</a>
-      <a href="map.html">Map</a>
-      <a href="climate.html">Climate & Location</a>
-      <a href="history.html">History</a>
-      <a href="demographics.html">Demographics</a>
-      <a href="poi.html">Points of Interest</a>
-      <a href="university.html">Riverbend University</a>
-    </div>
-  </div>
+  <!-- NAVIGATION -->
+  <header class="top-header">
+    <h1>New Grove City</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="climate.html">Climate & Location</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="demographics.html">Demographics</a></li>
+        <li><a href="poi.html">Points of Interest</a></li>
+        <li><a href="university.html">Riverbend University</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- MAIN CONTENT + SIDEBAR -->
-  <div class="main-content-wrapper">
-    <div class="main-columns">
+  <!-- MAIN CONTENT -->
+  <div class="index-body">
+    <h1>Welcome to New Grove</h1>
+    <p>New Grove is a fictional city located along the winding Silver River. It serves as a vibrant cultural and economic center for the surrounding region.</p>
 
-      <!-- Main text box -->
-      <div class="main-content">
-        <h1>Welcome to New Grove</h1>
-        <p>New Grove is a fictional city located along the winding Silver River. It serves as a vibrant cultural and economic center for the surrounding region.</p>
-
-        <p>The city is known for its historic districts, lush parks, and the prestigious Riverbend University. Use the navigation above to explore maps, climate, history, population, and points of interest.</p>
-      </div>
-
-      <!-- Sidebar -->
-      <div class="sidebar-content">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="map.html">City Map</a></li>
-          <li><a href="climate.html">Climate & Location</a></li>
-          <li><a href="history.html">History</a></li>
-          <li><a href="demographics.html">Demographics</a></li>
-          <li><a href="poi.html">Points of Interest</a></li>
-          <li><a href="university.html">Riverbend University</a></li>
-        </ul>
-      </div>
-
-    </div>
+    <p>The city is known for its historic districts, lush parks, and the prestigious Riverbend University. Use the navigation above to explore maps, climate, history, population, and points of interest.</p>
   </div>
 
   <!-- FOOTER -->
