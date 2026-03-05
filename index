@@ -1,51 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>City of Newgrove</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Grove City</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="city-info-page">
 
-<body>
+  <!-- HEADER IMAGE + NAVIGATION -->
+  <div class="header-image">
+    <div class="card-nav">
+      <a href="index.html">Home</a>
+      <a href="map.html">Map</a>
+      <a href="climate.html">Climate & Location</a>
+      <a href="history.html">History</a>
+      <a href="demographics.html">Demographics</a>
+      <a href="poi.html">Points of Interest</a>
+      <a href="university.html">Riverbend University</a>
+    </div>
+  </div>
 
-<header>
-<h1>City of Newgrove</h1>
-<p>A fictional city worldbuilding project</p>
-</header>
+  <!-- MAIN CONTENT + SIDEBAR -->
+  <div class="main-content-wrapper">
+    <div class="main-columns">
 
-<nav>
-<a href="index.html">Home</a>
-<a href="map.html">Map</a>
-<a href="climate.html">Climate & Location</a>
-<a href="history.html">History</a>
-<a href="demographics.html">Demographics</a>
-<a href="poi.html">Points of Interest</a>
-<a href="university.html">Riverbend University</a>
-</nav>
+      <!-- Main text box -->
+      <div class="main-content">
+        <h1>Welcome to New Grove</h1>
+        <p>New Grove is a fictional city located along the winding Silver River. It serves as a vibrant cultural and economic center for the surrounding region.</p>
 
-<div class="container">
+        <p>The city is known for its historic districts, lush parks, and the prestigious Riverbend University. Use the navigation above to explore maps, climate, history, population, and points of interest.</p>
+      </div>
 
-<h2>Welcome to Newgrove</h2>
+      <!-- Sidebar -->
+      <div class="sidebar-content">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="map.html">City Map</a></li>
+          <li><a href="climate.html">Climate & Location</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="demographics.html">Demographics</a></li>
+          <li><a href="poi.html">Points of Interest</a></li>
+          <li><a href="university.html">Riverbend University</a></li>
+        </ul>
+      </div>
 
-<p>
-Newgrove is a fictional mid-sized city located along a major river valley.  
-It serves as the cultural and educational center of the surrounding region.
-</p>
+    </div>
+  </div>
 
-<p>
-The city is home to <strong>Riverbend University</strong>, historic districts,
-modern research parks, and a vibrant riverfront.
-</p>
-
-<p>
-Use the navigation above to explore the city’s geography, history,
-population, and major landmarks.
-</p>
-
-</div>
-
-<footer>
-Newgrove
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2026 New Grove City Lore Project
+  </footer>
 
 </body>
 </html>
