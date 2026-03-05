@@ -6,7 +6,7 @@
   <title>New Grove City</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="city-info-page">
+<body class="newgrove-city">
 
   <!-- HEADER IMAGE + NAVIGATION -->
   <div class="header-image">
