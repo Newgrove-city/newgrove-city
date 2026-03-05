@@ -7,19 +7,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="index-page">
-
-  <div class="header-image">
-    <div class="card-nav">
-      <a href="index.html">Home</a>
-      <a href="map.html">Map</a>
-      <a href="climate.html">Climate & Location</a>
-      <a href="history.html">History</a>
-      <a href="demographics.html">Demographics</a>
-      <a href="poi.html">Points of Interest</a>
-      <a href="university.html">Riverbend University</a>
-    </div>
-  </div>
-
   <div class="main-content-wrapper">
     <div class="main-columns">
 
