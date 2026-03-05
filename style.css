@@ -7,11 +7,11 @@ body.index-page {
   line-height: 1.6;
   background-color: #FFE29E; /* opaque background */
   color: #EB9B6A;           /* opaque font color */
+
   display: flex;
-  justify-content: center;
+  flex-direction: column;   /* allow footer at bottom */
   align-items: center;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 /* === TEXT BOX IN THE MIDDLE === */
@@ -24,8 +24,29 @@ body.index-page {
   width: 70%;
   text-align: center;
   backdrop-filter: blur(4px);
+
+  margin-top: auto;
+  margin-bottom: auto;
+
   animation: fadeInUp 1.2s ease forwards;
-  opacity: 0; /* will fade in */
+  opacity: 0;
+}
+
+/* === FOOTER BOX === */
+footer {
+  background-color: #8C394B; /* same color but opaque */
+  color: #EB9B6A;
+  text-align: center;
+
+  padding: 18px 40px;
+  margin-bottom: 25px;
+  margin-top: 40px;
+
+  border-radius: 16px;
+  width: fit-content;
+  max-width: 800px;
+
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
 }
 
 /* === ANIMATIONS === */
@@ -54,8 +75,14 @@ body.index-page {
 
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 900px) {
+
   .index-body {
     width: 90%;
     padding: 40px;
   }
+
+  footer {
+    width: 90%;
+  }
+
 }
