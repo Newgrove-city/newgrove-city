@@ -1,54 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Riverbend Map</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Grove City Map</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="city-info-page">
 
-<body>
+  <div class="header-image">
+    <div class="card-nav">
+      <a href="index.html">Home</a>
+      <a href="map.html">Map</a>
+      <a href="climate.html">Climate & Location</a>
+      <a href="history.html">History</a>
+      <a href="demographics.html">Demographics</a>
+      <a href="poi.html">Points of Interest</a>
+      <a href="university.html">Riverbend University</a>
+    </div>
+  </div>
 
-<header>
-<h1>Riverbend Map</h1>
-</header>
+  <div class="main-content-wrapper">
+    <div class="main-columns">
 
-<nav>
-<a href="index.html">Home</a>
-<a href="map.html">Map</a>
-<a href="climate.html">Climate & Location</a>
-<a href="history.html">History</a>
-<a href="demographics.html">Demographics</a>
-<a href="poi.html">Points of Interest</a>
-<a href="university.html">Riverbend University</a>
-</nav>
+      <div class="main-content">
+        <h1>City Map</h1>
+        <p>This map highlights the districts, river corridor, and major landmarks of New Grove City.</p>
+        <img src="images/city-map.jpg" alt="City Map" style="width:100%; border-radius:12px;">
+        <ul>
+          <li>Old Town District</li>
+          <li>Riverfront District</li>
+          <li>University Quarter</li>
+          <li>North Hills Industrial Park</li>
+          <li>South Grove Residential Area</li>
+        </ul>
+      </div>
 
-<div class="container">
+      <div class="sidebar-content">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="climate.html">Climate & Location</a></li>
+          <li><a href="history.html">History</a></li>
+        </ul>
+      </div>
 
-<h2>City Map</h2>
+    </div>
+  </div>
 
-<p>
-This map shows the districts of Riverbend, the river corridor,
-and major transportation routes.
-</p>
-
-<img src="map-placeholder.jpg" width="100%">
-
-<p>
-Districts include:
-</p>
-
-<ul>
-<li>Old Town</li>
-<li>Riverfront District</li>
-<li>University Quarter</li>
-<li>North Industrial Park</li>
-<li>South Hills Residential Area</li>
-</ul>
-
-</div>
-
-<footer>
-Riverbend City Lore Project
-</footer>
+  <footer>
+    &copy; 2026 New Grove City Lore Project
+  </footer>
 
 </body>
 </html>
