@@ -1,167 +1,105 @@
-/* ============================= */
-/* GLOBAL STYLES */
-/* ============================= */
+@import url('https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap');
 
-body {
-  margin: 0;
-  font-family: 'Maiden Orange', serif;
-  background-color: #FFE29E;
-  color: #EB9B6A;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body{
+background:#FFE29E;
+color:#EB9B6A;
+font-family:'Maiden Orange', cursive;
+margin:0;
+overflow-x:hidden;
 }
 
-/* ============================= */
-/* SITE TITLE */
-/* ============================= */
-
-.site-title {
-  margin-top: 70px;
-  text-align: center;
-  animation: titleFade 1.5s ease;
-}
-
-.site-title h1 {
-  font-size: 56px;
-  margin: 0;
-  letter-spacing: 4px;
-}
-
-.site-title p {
-  margin-top: 10px;
-  font-size: 18px;
-  opacity: 0.9;
-}
-
-@keyframes titleFade {
-  from {
-    opacity: 0;
-    transform: translateY(-25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ============================= */
 /* NAVIGATION */
-/* ============================= */
 
-nav {
-  margin-top: 40px;
+nav{
+position:fixed;
+top:20px;
+right:40px;
+display:flex;
+gap:25px;
+font-size:22px;
+z-index:10;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 18px;
-  padding: 0;
+nav a{
+text-decoration:none;
+color:#EB9B6A;
+transition:all 0.3s;
 }
 
-nav a {
-  text-decoration: none;
-  background: #8C394B;
-  color: #FFE29E;
-  padding: 12px 20px;
-  border-radius: 30px;
-  transition: all 0.3s ease;
+nav a:hover{
+transform:scale(1.2) rotate(-3deg);
 }
 
-/* warm glow hover */
+/* TITLE */
 
-nav a:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 18px rgba(255, 200, 120, 0.6);
+.hero{
+text-align:center;
+padding-top:120px;
+font-size:70px;
+animation:fadeIn 2s ease;
 }
 
-/* ============================= */
-/* MAIN POSTCARD */
-/* ============================= */
+/* POSTCARD GRID */
 
-.index-body {
-  margin-top: 70px;
-  max-width: 750px;
-  padding: 60px;
-  background: rgba(140, 57, 75, 0.9);
-  border-radius: 18px;
-  text-align: center;
-
-  box-shadow:
-  0 10px 30px rgba(0,0,0,0.25),
-  inset 0 0 20px rgba(255,226,158,0.15);
-
-  animation: postcardEntrance 1.4s ease;
+.postcards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:50px;
+margin:80px;
 }
 
-/* hover postcard lift */
+/* CARD */
 
-.index-body:hover {
-  transform: translateY(-6px);
-  transition: 0.3s;
+.card{
+background:rgba(140,57,75,0.85);
+width:260px;
+padding:25px;
+border-radius:12px;
+color:#FFE29E;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+transition:transform 0.4s;
+animation:float 6s ease-in-out infinite;
 }
 
-@keyframes postcardEntrance {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.card:hover{
+transform:rotate(4deg) scale(1.05);
 }
 
-/* ============================= */
-/* LINKS INSIDE CARD */
-/* ============================= */
+/* SUBPAGE BOX */
 
-.index-body a {
-  color: #FFE29E;
-  font-weight: bold;
-  text-decoration: underline;
+.content-box{
+background:rgba(140,57,75,0.85);
+width:65%;
+margin:120px auto;
+padding:40px;
+border-radius:15px;
+color:#FFE29E;
+font-size:20px;
+line-height:1.6;
+animation:slideUp 1.5s ease;
 }
 
-.index-body a:hover {
-  color: #FFF5CC;
+/* ANIMATIONS */
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
 }
 
-/* ============================= */
-/* FOOTER */
-/* ============================= */
-
-footer {
-  margin-top: auto;
-  margin-bottom: 30px;
-  margin-top: 80px;
-
-  background: #8C394B;
-  color: #EB9B6A;
-
-  padding: 18px 40px;
-  border-radius: 16px;
-
-  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+@keyframes slideUp{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
-/* ============================= */
-/* RESPONSIVE */
-/* ============================= */
-
-@media (max-width: 900px) {
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .index-body {
-    width: 90%;
-    padding: 40px;
-  }
-
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0px);}
 }
