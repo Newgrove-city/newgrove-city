@@ -16,6 +16,8 @@ nav ul{
   gap:18px;
   list-style:none;
   padding:20px;
+  flex-wrap:wrap;          /* allows buttons to move to next line */
+  justify-content:center;  /* keeps them centered */
 }
 
 nav a{
@@ -26,6 +28,7 @@ nav a{
   border-radius:25px;
   transition:all .35s ease;
   letter-spacing:1px;
+  white-space:nowrap;      /* prevents text from breaking */
 }
 
 /* HOVER EFFECT */
@@ -33,7 +36,7 @@ nav a{
 nav a:hover{
   transform:rotate(-2deg) translateY(-4px);
   box-shadow:0 8px 18px rgba(0,0,0,.25);
-  letter-spacing:6px; /* spreads the letters */
+  letter-spacing:4px;
 }
 
 /* MAIN CARD */
