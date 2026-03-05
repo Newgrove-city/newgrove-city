@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Climate and Location</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Climate and Location</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="map.html">Map</a>
+<a href="climate.html">Climate & Location</a>
+<a href="history.html">History</a>
+<a href="demographics.html">Demographics</a>
+<a href="poi.html">Points of Interest</a>
+<a href="university.html">Riverbend University</a>
+</nav>
+
+<div class="container">
+
+<h2>Geographic Location</h2>
+
+<p>
+Riverbend lies along a wide bend in the Silver River,
+approximately 120 km inland from the coast.
+The surrounding region consists of rolling hills and fertile farmland.
+</p>
+
+<h2>Climate</h2>
+
+<p>
+Riverbend has a humid temperate climate with warm summers and cool winters.
+The nearby river moderates temperatures and produces frequent fog in autumn.
+</p>
+
+<ul>
+<li>Average summer temperature: 27°C</li>
+<li>Average winter temperature: 4°C</li>
+<li>Annual rainfall: 900 mm</li>
+</ul>
+
+</div>
+
+<footer>
+Riverbend City Lore Project
+</footer>
+
+</body>
+</html>
