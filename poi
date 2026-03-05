@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Points of Interest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Points of Interest</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="map.html">Map</a>
+<a href="climate.html">Climate & Location</a>
+<a href="history.html">History</a>
+<a href="demographics.html">Demographics</a>
+<a href="poi.html">Points of Interest</a>
+<a href="university.html">Riverbend University</a>
+</nav>
+
+<div class="container">
+
+<h2>Major Landmarks</h2>
+
+<ul>
+<li>Riverbend City Hall</li>
+<li>Silver River Promenade</li>
+<li>Central Market Square</li>
+<li>Riverbend Museum of History</li>
+<li>Liberty Bridge</li>
+</ul>
+
+<h2>Parks</h2>
+
+<ul>
+<li>Riverside Park</li>
+<li>Hillcrest Botanical Gardens</li>
+<li>Greenway Nature Reserve</li>
+</ul>
+
+</div>
+
+<footer>
+Riverbend City Lore Project
+</footer>
+
+</body>
+</html>
