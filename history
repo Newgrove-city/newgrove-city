@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>History of Riverbend</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>History of Riverbend</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="map.html">Map</a>
+<a href="climate.html">Climate & Location</a>
+<a href="history.html">History</a>
+<a href="demographics.html">Demographics</a>
+<a href="poi.html">Points of Interest</a>
+<a href="university.html">Riverbend University</a>
+</nav>
+
+<div class="container">
+
+<h2>Early Settlement</h2>
+
+<p>
+Riverbend began as a trading settlement in the early 1800s due to its strategic
+position along the Silver River trade route.
+</p>
+
+<h2>Industrial Growth</h2>
+
+<p>
+During the late 19th century the city expanded rapidly as railways
+connected Riverbend to major regional markets.
+Factories and river docks became the economic core of the city.
+</p>
+
+<h2>Modern Era</h2>
+
+<p>
+Today Riverbend has transitioned into a regional center for
+education, technology, and cultural activity.
+</p>
+
+</div>
+
+<footer>
+Riverbend City Lore Project
+</footer>
+
+</body>
+</html>
