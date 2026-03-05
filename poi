@@ -6,8 +6,7 @@
   <title>Points of Interest</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="city-info-page">
-
+<body class="newgrove-city">
   <div class="header-image">
     <div class="card-nav">
       <a href="index.html">Home</a>
