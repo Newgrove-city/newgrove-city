@@ -1,54 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Climate and Location</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate & Location</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="city-info-page">
 
-<body>
+  <div class="header-image">
+    <div class="card-nav">
+      <a href="index.html">Home</a>
+      <a href="map.html">Map</a>
+      <a href="climate.html">Climate & Location</a>
+      <a href="history.html">History</a>
+      <a href="demographics.html">Demographics</a>
+      <a href="poi.html">Points of Interest</a>
+      <a href="university.html">Riverbend University</a>
+    </div>
+  </div>
 
-<header>
-<h1>Climate and Location</h1>
-</header>
+  <div class="main-content-wrapper">
+    <div class="main-columns">
 
-<nav>
-<a href="index.html">Home</a>
-<a href="map.html">Map</a>
-<a href="climate.html">Climate & Location</a>
-<a href="history.html">History</a>
-<a href="demographics.html">Demographics</a>
-<a href="poi.html">Points of Interest</a>
-<a href="university.html">Riverbend University</a>
-</nav>
+      <div class="main-content">
+        <h1>Climate & Location</h1>
+        <h2>Geography</h2>
+        <p>New Grove City lies along the Silver River valley, surrounded by rolling hills and fertile farmland.</p>
 
-<div class="container">
+        <h2>Climate</h2>
+        <p>The city has a humid temperate climate, with warm summers and cool winters. Fog is common in autumn along the river.</p>
+        <ul>
+          <li>Average summer: 27°C</li>
+          <li>Average winter: 4°C</li>
+          <li>Annual rainfall: 900 mm</li>
+        </ul>
+      </div>
 
-<h2>Geographic Location</h2>
+      <div class="sidebar-content">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="history.html">History</a></li>
+        </ul>
+      </div>
 
-<p>
-Riverbend lies along a wide bend in the Silver River,
-approximately 120 km inland from the coast.
-The surrounding region consists of rolling hills and fertile farmland.
-</p>
+    </div>
+  </div>
 
-<h2>Climate</h2>
-
-<p>
-Riverbend has a humid temperate climate with warm summers and cool winters.
-The nearby river moderates temperatures and produces frequent fog in autumn.
-</p>
-
-<ul>
-<li>Average summer temperature: 27°C</li>
-<li>Average winter temperature: 4°C</li>
-<li>Annual rainfall: 900 mm</li>
-</ul>
-
-</div>
-
-<footer>
-Riverbend City Lore Project
-</footer>
+  <footer>
+    &copy; 2026 New Grove City Lore Project
+  </footer>
 
 </body>
 </html>
