@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Riverbend Demographics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Demographics</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="map.html">Map</a>
+<a href="climate.html">Climate & Location</a>
+<a href="history.html">History</a>
+<a href="demographics.html">Demographics</a>
+<a href="poi.html">Points of Interest</a>
+<a href="university.html">Riverbend University</a>
+</nav>
+
+<div class="container">
+
+<h2>Population</h2>
+
+<p>
+The estimated population of Riverbend is approximately <strong>350,000</strong> residents.
+</p>
+
+<h2>Age Distribution</h2>
+
+<ul>
+<li>Under 18: 21%</li>
+<li>18–35: 34%</li>
+<li>36–60: 29%</li>
+<li>60+: 16%</li>
+</ul>
+
+<h2>Economy</h2>
+
+<p>
+Major employment sectors include education, healthcare,
+manufacturing, and technology services.
+</p>
+
+</div>
+
+<footer>
+Riverbend City Lore Project
+</footer>
+
+</body>
+</html>
