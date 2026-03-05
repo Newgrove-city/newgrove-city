@@ -1,5 +1,4 @@
-/* === GLOBAL === */
-
+/* === GLOBAL STYLES === */
 body {
   margin: 0;
   padding: 0;
@@ -12,14 +11,12 @@ body {
 }
 
 /* === ANIMATIONS === */
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* === HEADER IMAGE / NAVIGATION === */
-
+/* === HEADER IMAGE + NAVIGATION CARDS === */
 .header-image {
   background-image: url('images/city-background.jpeg');
   background-size: cover;
@@ -32,8 +29,6 @@ body {
   position: relative;
 }
 
-/* dark overlay */
-
 .header-image::after {
   content: '';
   position: absolute;
@@ -45,8 +40,6 @@ body {
   z-index: 1;
 }
 
-/* === NAVIGATION CARDS === */
-
 .card-nav {
   position: relative;
   z-index: 2;
@@ -56,6 +49,7 @@ body {
   width: 100%;
   max-width: 1100px;
   padding: 10px 20px;
+  flex-wrap: wrap;
 }
 
 .card-nav a {
@@ -72,15 +66,15 @@ body {
   flex: 1 1 160px;
 }
 
-.card-nav a:hover {
+.card-nav a:hover,
+.card-nav a.active {
   background-color: #8b2405;
   color: #ffffff;
   transform: translateY(-3px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.5);
 }
 
-/* === PAGE STRUCTURE === */
-
+/* === MAIN CONTENT + SIDEBAR === */
 .main-content-wrapper {
   display: flex;
   justify-content: center;
@@ -92,10 +86,10 @@ body {
   gap: 35px;
   max-width: 1200px;
   width: 100%;
+  flex-wrap: wrap;
 }
 
-/* === MAIN CONTENT BOX === */
-
+/* Main content box */
 .main-content {
   flex: 1;
   max-width: 600px;
@@ -113,8 +107,7 @@ body {
   margin-top: 0;
 }
 
-/* === SIDEBAR === */
-
+/* Sidebar box */
 .sidebar-content {
   flex: 0.45;
   max-width: 250px;
@@ -130,8 +123,50 @@ body {
   margin-top: 0;
 }
 
-/* === WELCOME OVERLAY (OPTIONAL INTRO SCREEN) === */
+/* === SUBPAGE LINKS === */
+.sidebar-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+.sidebar-content ul li {
+  margin-bottom: 12px;
+}
+
+.sidebar-content ul li a {
+  text-decoration: none;
+  color: #8be9c2;
+  font-weight: bold;
+  padding: 6px 8px;
+  display: inline-block;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-content ul li a:hover,
+.sidebar-content ul li a.active {
+  color: #ffffff;
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Add arrow indicator for nested subpages (if needed) */
+.sidebar-content ul li ul li::before {
+  content: "→ ";
+  color: #ffd369;
+}
+
+/* Nested links */
+.sidebar-content ul li ul li a {
+  color: #8be9c2;
+  font-size: 0.95em;
+}
+
+.sidebar-content ul li ul li a:hover {
+  color: #ffd369;
+}
+
+/* === WELCOME OVERLAY === */
 .welcome-overlay {
   position: fixed;
   top: 0;
@@ -173,7 +208,6 @@ body {
 }
 
 /* === FOOTER === */
-
 footer {
   background-color: #6d1703;
   color: #ebbe83;
@@ -184,7 +218,6 @@ footer {
 }
 
 /* === RESPONSIVE DESIGN === */
-
 @media (max-width: 900px) {
 
   .main-columns {
