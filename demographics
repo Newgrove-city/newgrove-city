@@ -1,55 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Riverbend Demographics</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demographics</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="city-info-page">
 
-<body>
+  <div class="header-image">
+    <div class="card-nav">
+      <a href="index.html">Home</a>
+      <a href="map.html">Map</a>
+      <a href="climate.html">Climate & Location</a>
+      <a href="history.html">History</a>
+      <a href="demographics.html">Demographics</a>
+      <a href="poi.html">Points of Interest</a>
+      <a href="university.html">Riverbend University</a>
+    </div>
+  </div>
 
-<header>
-<h1>Demographics</h1>
-</header>
+  <div class="main-content-wrapper">
+    <div class="main-columns">
 
-<nav>
-<a href="index.html">Home</a>
-<a href="map.html">Map</a>
-<a href="climate.html">Climate & Location</a>
-<a href="history.html">History</a>
-<a href="demographics.html">Demographics</a>
-<a href="poi.html">Points of Interest</a>
-<a href="university.html">Riverbend University</a>
-</nav>
+      <div class="main-content">
+        <h1>Demographics</h1>
+        <p>New Grove City has a population of approximately 350,000 residents.</p>
+        <h2>Age Distribution</h2>
+        <ul>
+          <li>Under 18: 21%</li>
+          <li>18–35: 34%</li>
+          <li>36–60: 29%</li>
+          <li>60+: 16%</li>
+        </ul>
+        <h2>Economy</h2>
+        <p>Main employment sectors include education, healthcare, manufacturing, and technology services.</p>
+      </div>
 
-<div class="container">
+      <div class="sidebar-content">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="history.html">History</a></li>
+        </ul>
+      </div>
 
-<h2>Population</h2>
+    </div>
+  </div>
 
-<p>
-The estimated population of Riverbend is approximately <strong>350,000</strong> residents.
-</p>
-
-<h2>Age Distribution</h2>
-
-<ul>
-<li>Under 18: 21%</li>
-<li>18–35: 34%</li>
-<li>36–60: 29%</li>
-<li>60+: 16%</li>
-</ul>
-
-<h2>Economy</h2>
-
-<p>
-Major employment sectors include education, healthcare,
-manufacturing, and technology services.
-</p>
-
-</div>
-
-<footer>
-Riverbend City Lore Project
-</footer>
+  <footer>
+    &copy; 2026 New Grove City Lore Project
+  </footer>
 
 </body>
 </html>
