@@ -16,33 +16,8 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* === HEADER IMAGE + NAVIGATION CARDS === */
-.header-image {
-  background-image: url('images/city-background.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.header-image::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(109, 23, 3, 0.45);
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
+/* === NAVIGATION CARDS === */
 .card-nav {
-  position: relative;
-  z-index: 2;
   display: flex;
   justify-content: center;
   gap: 30px;
