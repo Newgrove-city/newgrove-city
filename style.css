@@ -9,8 +9,9 @@ body {
   min-height:100vh;
 }
 
-/* NAVBAR */
-
+/* =========================
+   NAVBAR
+   ========================= */
 nav ul{
   display:flex;
   gap:18px;
@@ -27,10 +28,8 @@ nav a{
   font-size:1rem;
   padding:12px 22px;
   border-radius:30px;
-  border:2px solid rgba(255,226,158,.7);   /* subtle cream border */
-
-  box-shadow:
-    0 4px 10px rgba(0,0,0,.18);            /* soft vintage shadow */
+  border:3px solid rgba(255,226,158,0.7);   /* slightly thicker border */
+  box-shadow:0 4px 10px rgba(0,0,0,.18);
   transition:all .35s ease;
   letter-spacing:1px;
   white-space:nowrap;
@@ -38,8 +37,6 @@ nav a{
   position:relative;
   overflow:hidden;
 }
-
-/* HOVER EFFECT */
 
 nav a:hover{
   transform:translateY(-4px) rotate(-1deg);
@@ -59,12 +56,12 @@ nav a::after{
   );
   pointer-events:none;
 }
+
 /* =========================
    INDEX PAGE
    ========================= */
 
 /* MAIN CARD */
-
 .index-body{
   margin-top:80px;
   background:rgba(140,57,75,.9);
@@ -73,10 +70,10 @@ nav a::after{
   max-width:700px;
   text-align:center;
   animation:cardRise 1.2s ease;
+  color:#FFE29E; /* main text same as background */
 }
 
 /* BIG MAIN TITLE ON INDEX */
-
 .index-body h1{
   font-size:3.2rem;
   margin-top:0;
@@ -85,13 +82,11 @@ nav a::after{
 }
 
 /* CARD EFFECT */
-
 .index-body:hover{
   transform:rotate(-1deg);
 }
 
 /* ANIMATION */
-
 @keyframes cardRise{
   from{
     opacity:0;
@@ -104,7 +99,6 @@ nav a::after{
 }
 
 /* FOOTER */
-
 footer{
   margin-top:auto;
   background:#8C394B;
@@ -117,7 +111,6 @@ footer{
 /* =========================
    SUBPAGE BODY
    ========================= */
-
 body.subpage{
   margin:0;
   font-family:'Maiden Orange',serif;
@@ -130,17 +123,15 @@ body.subpage{
 }
 
 /* PAGE TITLE */
-
 .page-title{
   margin-top:40px;
-  font-size:3rem;          /* bigger title */
+  font-size:3rem;
   text-align:center;
   letter-spacing:3px;
   animation:titleFade 1s ease;
 }
 
 /* MAIN CONTAINER */
-
 .subpage-container{
   max-width:900px;
   width:85%;
@@ -152,10 +143,9 @@ body.subpage{
 }
 
 /* POSTCARD BOXES */
-
 .postcard{
   background:rgba(140,57,75,.88);
-  color:#FFE29E;
+  color:#FFE29E; /* main text same as background */
   padding:40px;
   border-radius:16px;
   width:100%;
@@ -167,19 +157,16 @@ body.subpage{
 }
 
 /* alternating postcard tilt */
-
 .postcard:nth-child(even){
   transform:rotate(1deg);
 }
 
 /* hover effect */
-
 .postcard:hover{
   transform:rotate(0deg) scale(1.02);
 }
 
 /* animations */
-
 @keyframes cardAppear{
   from{
     opacity:0;
@@ -205,7 +192,6 @@ body.subpage{
 /* =========================
    MAP PAGE
    ========================= */
-
 body.map-page{
   margin:0;
   font-family:'Maiden Orange',serif;
@@ -218,7 +204,6 @@ body.map-page{
 }
 
 /* map container */
-
 .map-container{
   width:90%;
   max-width:1000px;
@@ -230,7 +215,6 @@ body.map-page{
 }
 
 /* map card */
-
 .map-card{
   background:rgba(140,57,75,.88);
   padding:40px;
@@ -240,16 +224,15 @@ body.map-page{
   transition:all .4s ease;
   animation:mapAppear 1s ease;
   text-align:center;
+  color:#FFE29E; /* main text same as background */
 }
 
 /* hover effect */
-
 .map-card:hover{
   transform:rotate(0deg) scale(1.02);
 }
 
 /* map image */
-
 .map-card img{
   width:100%;
   max-width:850px;
@@ -258,7 +241,6 @@ body.map-page{
 }
 
 /* caption */
-
 .map-caption{
   margin-top:18px;
   color:#FFE29E;
@@ -267,7 +249,6 @@ body.map-page{
 }
 
 /* animation */
-
 @keyframes mapAppear{
   from{
     opacity:0;
