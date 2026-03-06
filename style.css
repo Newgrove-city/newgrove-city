@@ -35,16 +35,30 @@ nav a{
   letter-spacing:1px;
   white-space:nowrap;
   display:inline-block;
+  position:relative;
+  overflow:hidden;
 }
 
 /* HOVER EFFECT */
 
 nav a:hover{
-  transform:rotate(-2deg) translateY(-4px);
-  box-shadow:0 8px 18px rgba(0,0,0,.25);
-  letter-spacing:4px;
+  transform:translateY(-4px) rotate(-1deg);
+  box-shadow:0 8px 16px rgba(0,0,0,.25);
+  letter-spacing:3px;
 }
 
+nav a::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:30px;
+  background:linear-gradient(
+    to bottom,
+    rgba(255,255,255,.15),
+    transparent 60%
+  );
+  pointer-events:none;
+}
 /* =========================
    INDEX PAGE
    ========================= */
