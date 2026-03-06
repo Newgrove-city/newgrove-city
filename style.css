@@ -16,20 +16,20 @@ nav ul{
   gap:18px;
   list-style:none;
   padding:20px;
-  flex-wrap:wrap;          /* allows buttons to move to next line */
-  justify-content:center;  /* keeps them centered */
+  flex-wrap:wrap;
+  justify-content:center;
 }
 
 nav a{
   text-decoration:none;
   color:#FFE29E;
   background:#8C394B;
-  font-size:1.3rem; /* bigger text */
+  font-size:1.3rem;
   padding:14px 26px;
   border-radius:25px;
   transition:all .35s ease;
   letter-spacing:1px;
-  white-space:nowrap;      /* prevents text from breaking */
+  white-space:nowrap;
 }
 
 /* HOVER EFFECT */
@@ -39,6 +39,10 @@ nav a:hover{
   box-shadow:0 8px 18px rgba(0,0,0,.25);
   letter-spacing:4px;
 }
+
+/* =========================
+   INDEX PAGE
+   ========================= */
 
 /* MAIN CARD */
 
@@ -50,6 +54,15 @@ nav a:hover{
   max-width:700px;
   text-align:center;
   animation:cardRise 1.2s ease;
+}
+
+/* BIG MAIN TITLE ON INDEX */
+
+.index-body h1{
+  font-size:3.2rem;
+  margin-top:0;
+  margin-bottom:20px;
+  letter-spacing:3px;
 }
 
 /* CARD EFFECT */
@@ -79,9 +92,12 @@ footer{
   padding:20px;
   border-radius:15px;
   margin-bottom:30px;
+  font-size:1.1rem;
 }
 
-/* SUBPAGE BODY */
+/* =========================
+   SUBPAGE BODY
+   ========================= */
 
 body.subpage{
   margin:0;
@@ -94,17 +110,15 @@ body.subpage{
   align-items:center;
 }
 
-
 /* PAGE TITLE */
 
 .page-title{
   margin-top:40px;
-  font-size:42px;
+  font-size:3rem;          /* bigger title */
   text-align:center;
-  letter-spacing:2px;
+  letter-spacing:3px;
   animation:titleFade 1s ease;
 }
-
 
 /* MAIN CONTAINER */
 
@@ -118,29 +132,20 @@ body.subpage{
   align-items:center;
 }
 
-
 /* POSTCARD BOXES */
 
 .postcard{
-
   background:rgba(140,57,75,.88);
   color:#FFE29E;
-
   padding:40px;
   border-radius:16px;
-
   width:100%;
   max-width:700px;
-
   box-shadow:0 12px 25px rgba(0,0,0,.2);
-
   transform:rotate(-1deg);
   transition:all .4s ease;
-
   animation:cardAppear .9s ease;
-
 }
-
 
 /* alternating postcard tilt */
 
@@ -148,13 +153,11 @@ body.subpage{
   transform:rotate(1deg);
 }
 
-
 /* hover effect */
 
 .postcard:hover{
   transform:rotate(0deg) scale(1.02);
 }
-
 
 /* animations */
 
@@ -169,7 +172,6 @@ body.subpage{
   }
 }
 
-
 @keyframes titleFade{
   from{
     opacity:0;
@@ -177,7 +179,7 @@ body.subpage{
   }
   to{
     opacity:1;
-    letter-spacing:2px;
+    letter-spacing:3px;
   }
 }
 
@@ -196,7 +198,6 @@ body.map-page{
   align-items:center;
 }
 
-
 /* map container */
 
 .map-container{
@@ -209,27 +210,18 @@ body.map-page{
   gap:30px;
 }
 
-
 /* map card */
 
 .map-card{
-
   background:rgba(140,57,75,.88);
   padding:40px;
-
   border-radius:18px;
-
   box-shadow:0 14px 28px rgba(0,0,0,.25);
-
   transform:rotate(-1deg);
-
   transition:all .4s ease;
-
   animation:mapAppear 1s ease;
-
   text-align:center;
 }
-
 
 /* hover effect */
 
@@ -237,17 +229,14 @@ body.map-page{
   transform:rotate(0deg) scale(1.02);
 }
 
-
 /* map image */
 
 .map-card img{
   width:100%;
   max-width:850px;
   border-radius:10px;
-
   box-shadow:0 10px 20px rgba(0,0,0,.25);
 }
-
 
 /* caption */
 
@@ -258,19 +247,15 @@ body.map-page{
   letter-spacing:1px;
 }
 
-
 /* animation */
 
 @keyframes mapAppear{
-
   from{
     opacity:0;
     transform:translateY(40px) rotate(-3deg);
   }
-
   to{
     opacity:1;
     transform:translateY(0) rotate(-1deg);
   }
-
 }
