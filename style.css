@@ -24,7 +24,7 @@ body {
   /* =========================
      BACKGROUND IMAGE IN CENTER
      ========================= */
-  background-image: url('images/grove-background-index.jpeg'); /* replace with your image path */
+  background-image: url('./images/grove-background-index.jpeg'); /* replace with your image path */
   background-repeat: no-repeat;
   background-position: center top; /* horizontally centered */
   background-size: auto 100%;      /* full height, auto width */
@@ -208,7 +208,7 @@ body.map-page {
   align-items:center;
 
   /* add background image */
-  background-image: url('images/grove-background-index.jpeg'); /* adjust path */
+  background-image: url('./images/grove-background-index.jpeg'); /* adjust path */
   background-repeat: no-repeat;
   background-position: center top;
   background-size: auto 100%;
