@@ -35,7 +35,7 @@ body::before{
   top:0;
   left:50%;
   transform:translateX(-50%);
-  width:1000px; /* narrower background image */
+  width:1200px; /* increased width */
   height:100%;
 
   background-image:url('./images/grove-background-index.jpeg');
@@ -58,7 +58,7 @@ body::after{
   position:fixed;
   top:0;
   left:50%;
-  transform:translateX(-500px); /* half of background image width */
+  transform:translateX(-600px); /* half of new image width */
   width:8px;
   height:100%;
   background:rgba(140,57,75,1); /* fully opaque */
@@ -71,7 +71,7 @@ html::after{
   position:fixed;
   top:0;
   left:50%;
-  transform:translateX(500px); /* half of background image width */
+  transform:translateX(600px); /* half of new image width */
   width:8px;
   height:100%;
   background:rgba(140,57,75,1); /* fully opaque */
