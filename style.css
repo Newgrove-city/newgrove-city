@@ -179,3 +179,97 @@ body.subpage{
     letter-spacing:2px;
   }
 }
+
+/* =========================
+   MAP PAGE
+   ========================= */
+
+body.map-page{
+  margin:0;
+  font-family:'Maiden Orange',serif;
+  background:#FFE29E;
+  color:#EB9B6A;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+
+/* map container */
+
+.map-container{
+  width:90%;
+  max-width:1000px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top:40px;
+  gap:30px;
+}
+
+
+/* map card */
+
+.map-card{
+
+  background:rgba(140,57,75,.88);
+  padding:40px;
+
+  border-radius:18px;
+
+  box-shadow:0 14px 28px rgba(0,0,0,.25);
+
+  transform:rotate(-1deg);
+
+  transition:all .4s ease;
+
+  animation:mapAppear 1s ease;
+
+  text-align:center;
+}
+
+
+/* hover effect */
+
+.map-card:hover{
+  transform:rotate(0deg) scale(1.02);
+}
+
+
+/* map image */
+
+.map-card img{
+  width:100%;
+  max-width:850px;
+  border-radius:10px;
+
+  box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+
+/* caption */
+
+.map-caption{
+  margin-top:18px;
+  color:#FFE29E;
+  font-size:18px;
+  letter-spacing:1px;
+}
+
+
+/* animation */
+
+@keyframes mapAppear{
+
+  from{
+    opacity:0;
+    transform:translateY(40px) rotate(-3deg);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0) rotate(-1deg);
+  }
+
+}
