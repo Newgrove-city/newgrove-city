@@ -44,7 +44,7 @@ body::before{
   background-position:center top;
   background-size:auto 100%;
 
-  opacity:0.8;   /* ADJUST IMAGE FADE HERE */
+  opacity:0.7;   /* ADJUST IMAGE FADE HERE */
 
   z-index:0;
 }
