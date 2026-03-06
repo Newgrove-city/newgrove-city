@@ -26,10 +26,15 @@ nav a{
   background:#8C394B;
   font-size:1rem;
   padding:12px 22px;
-  border-radius:25px;
+  border-radius:30px;
+  border:2px solid rgba(255,226,158,.7);   /* subtle cream border */
+
+  box-shadow:
+    0 4px 10px rgba(0,0,0,.18);            /* soft vintage shadow */
   transition:all .35s ease;
   letter-spacing:1px;
   white-space:nowrap;
+  display:inline-block;
 }
 
 /* HOVER EFFECT */
