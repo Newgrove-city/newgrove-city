@@ -33,14 +33,15 @@ body::before{
   content:"";
   position:fixed;
   top:0;
-  left:0;
-  width:100%;
+  left:50%;
+  transform:translateX(-50%);
+  width:1000px; /* narrower background image */
   height:100%;
 
   background-image:url('./images/grove-background-index.jpeg');
   background-repeat:no-repeat;
   background-position:center top;
-  background-size:auto 100%;
+  background-size:100% 100%;
 
   opacity:0.7;
 
@@ -48,7 +49,7 @@ body::before{
 }
 
 /* =========================
-   CENTER IMAGE BORDER LINES (OPAQUE)
+   CENTER IMAGE VERTICAL LINES
    ========================= */
 
 /* LEFT BORDER */
@@ -56,8 +57,9 @@ body::after{
   content:"";
   position:fixed;
   top:0;
-  left:calc(50% - 500px);
-  width:8px; /* adjust thickness if needed */
+  left:50%;
+  transform:translateX(-500px); /* half of background image width */
+  width:8px;
   height:100%;
   background:rgba(140,57,75,1); /* fully opaque */
   z-index:0;
@@ -68,7 +70,8 @@ html::after{
   content:"";
   position:fixed;
   top:0;
-  left:calc(50% + 500px);
+  left:50%;
+  transform:translateX(500px); /* half of background image width */
   width:8px;
   height:100%;
   background:rgba(140,57,75,1); /* fully opaque */
