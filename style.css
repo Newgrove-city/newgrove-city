@@ -26,11 +26,10 @@ body.map-page{
   flex-direction:column;
   align-items:center;
 
-  /* side column color */
   background-color:#FFE29E;
 }
 
-/* BACKGROUND IMAGE LAYER */
+/* BACKGROUND IMAGE */
 body::before{
   content:"";
   position:fixed;
@@ -44,12 +43,12 @@ body::before{
   background-position:center top;
   background-size:auto 100%;
 
-  opacity:0.7;   /* ADJUST IMAGE FADE HERE */
+  opacity:0.35;
 
   z-index:0;
 }
 
-/* Keep page content above background */
+/* Keep content above background */
 body > *{
   position:relative;
   z-index:1;
@@ -106,6 +105,7 @@ nav a::after{
 /* =========================
    INDEX PAGE
    ========================= */
+
 .index-body{
   margin-top:80px;
   background:rgba(140,57,75,.9);
@@ -139,19 +139,22 @@ nav a::after{
   }
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+   ========================= */
 footer{
-  margin-top:auto;
+  margin-top:60px; /* space from content */
   background:#8C394B;
   padding:20px;
   border-radius:15px;
-  margin-bottom:30px;
+  margin-bottom:40px;
   font-size:1.1rem;
 }
 
 /* =========================
    SUBPAGE BODY
    ========================= */
+
 body.subpage{
   display:flex;
   flex-direction:column;
@@ -159,27 +162,32 @@ body.subpage{
   min-height:100vh;
 }
 
+/* SUBPAGE TITLE */
 .page-title{
-  margin-top:40px;
+  margin-top:10px;
+  margin-bottom:20px;
   font-size:3rem;
   text-align:center;
   letter-spacing:3px;
-  color:#8C394B; /* same color as main title */
+  color:#8C394B;
   font-weight:700;
   text-shadow:2px 2px 6px rgba(0,0,0,0.25);
   animation:titleFade 1s ease;
 }
 
+/* MAIN CONTENT AREA */
 .subpage-container{
   max-width:900px;
   width:85%;
-  margin-top:30px;
+  margin-top:20px;
+  margin-bottom:40px; /* space before footer */
   display:flex;
   flex-direction:column;
   gap:35px;
   align-items:center;
 }
 
+/* POSTCARD BOXES */
 .postcard{
   background:rgba(140,57,75,.88);
   color:#FFE29E;
@@ -226,6 +234,7 @@ body.subpage{
 /* =========================
    MAP PAGE
    ========================= */
+
 body.map-page{
   display:flex;
   flex-direction:column;
@@ -241,6 +250,7 @@ body.map-page{
   align-items:center;
   margin-top:40px;
   gap:30px;
+  margin-bottom:40px;
 }
 
 .map-card{
