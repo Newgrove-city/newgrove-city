@@ -22,6 +22,7 @@ body.map-page{
   font-family:'Maiden Orange',serif;
   color:#EB9B6A;
   min-height:100vh;
+
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -44,7 +45,7 @@ body::before{
   background-position:center top;
   background-size:auto 100%;
 
-  opacity:0.7;   /* ADJUST IMAGE FADE HERE */
+  opacity:0.35;
 
   z-index:0;
 }
@@ -53,6 +54,17 @@ body::before{
 body > *{
   position:relative;
   z-index:1;
+}
+
+/* =========================
+   FLEX CONTENT FIX
+   ========================= */
+
+/* allows page content to grow and push footer down */
+.index-body,
+.subpage-container,
+.map-container{
+  flex:1;
 }
 
 /* =========================
@@ -139,26 +151,23 @@ nav a::after{
   }
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+   ========================= */
 footer{
   margin-top:auto;
   background:#8C394B;
-  padding:20px;
+  padding:20px 40px;
   border-radius:15px;
   margin-bottom:30px;
   font-size:1.1rem;
+  color:#FFE29E;
+  text-align:center;
 }
 
 /* =========================
    SUBPAGE BODY
    ========================= */
-body.subpage{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  min-height:100vh;
-}
-
 .page-title{
   margin-top:40px;
   font-size:3rem;
@@ -223,13 +232,6 @@ body.subpage{
 /* =========================
    MAP PAGE
    ========================= */
-body.map-page{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  min-height:100vh;
-}
-
 .map-container{
   width:90%;
   max-width:1000px;
