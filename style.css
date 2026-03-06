@@ -75,11 +75,10 @@ nav a::after{
 
 /* BIG MAIN TITLE ON INDEX */
 .index-body h1{
-  font-size:4.5rem;
-  font-weight:700;
+  font-size:3.2rem;
   margin-top:0;
-  margin-bottom:25px;
-  letter-spacing:4px;
+  margin-bottom:20px;
+  letter-spacing:3px;
 }
 
 /* CARD EFFECT */
