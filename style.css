@@ -20,6 +20,32 @@ body {
   flex-direction:column;
   align-items:center;
   min-height:100vh;
+
+  /* =========================
+     BACKGROUND IMAGE IN CENTER
+     ========================= */
+  background-image: url('images/your-background.jpg'); /* replace with your image path */
+  background-repeat: no-repeat;
+  background-position: center top; /* horizontally centered */
+  background-size: auto 100%;      /* full height, auto width */
+}
+
+/* Make sure content stays in front */
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: keep side columns visible even if image is wide */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFE29E;
+  z-index: 0; /* sits behind content and image */
 }
 
 /* =========================
@@ -41,7 +67,7 @@ nav a{
   font-size:1rem;
   padding:12px 22px;
   border-radius:30px;
-  border:3px solid rgba(255,226,158,0.7);   /* slightly thicker border */
+  border:3px solid rgba(255,226,158,0.7);
   box-shadow:0 4px 10px rgba(0,0,0,.18);
   transition:all .35s ease;
   letter-spacing:1px;
@@ -73,8 +99,6 @@ nav a::after{
 /* =========================
    INDEX PAGE
    ========================= */
-
-/* MAIN CARD */
 .index-body{
   margin-top:80px;
   background:rgba(140,57,75,.9);
@@ -83,10 +107,9 @@ nav a::after{
   max-width:700px;
   text-align:center;
   animation:cardRise 1.2s ease;
-  color:#FFE29E; /* main text same as background */
+  color:#FFE29E;
 }
 
-/* BIG MAIN TITLE ON INDEX */
 .index-body h1{
   font-size:3.2rem;
   margin-top:0;
@@ -94,21 +117,13 @@ nav a::after{
   letter-spacing:3px;
 }
 
-/* CARD EFFECT */
 .index-body:hover{
   transform:rotate(-1deg);
 }
 
-/* ANIMATION */
 @keyframes cardRise{
-  from{
-    opacity:0;
-    transform:translateY(40px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
+  from{ opacity:0; transform:translateY(40px); }
+  to{ opacity:1; transform:translateY(0); }
 }
 
 /* FOOTER */
@@ -135,7 +150,6 @@ body.subpage{
   align-items:center;
 }
 
-/* PAGE TITLE */
 .page-title{
   margin-top:40px;
   font-size:3rem;
@@ -144,7 +158,6 @@ body.subpage{
   animation:titleFade 1s ease;
 }
 
-/* MAIN CONTAINER */
 .subpage-container{
   max-width:900px;
   width:85%;
@@ -155,10 +168,9 @@ body.subpage{
   align-items:center;
 }
 
-/* POSTCARD BOXES */
 .postcard{
   background:rgba(140,57,75,.88);
-  color:#FFE29E; /* main text same as background */
+  color:#FFE29E;
   padding:40px;
   border-radius:16px;
   width:100%;
@@ -169,37 +181,17 @@ body.subpage{
   animation:cardAppear .9s ease;
 }
 
-/* alternating postcard tilt */
-.postcard:nth-child(even){
-  transform:rotate(1deg);
-}
+.postcard:nth-child(even){ transform:rotate(1deg); }
+.postcard:hover{ transform:rotate(0deg) scale(1.02); }
 
-/* hover effect */
-.postcard:hover{
-  transform:rotate(0deg) scale(1.02);
-}
-
-/* animations */
 @keyframes cardAppear{
-  from{
-    opacity:0;
-    transform:translateY(30px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
+  from{ opacity:0; transform:translateY(30px); }
+  to{ opacity:1; transform:translateY(0); }
 }
 
 @keyframes titleFade{
-  from{
-    opacity:0;
-    letter-spacing:8px;
-  }
-  to{
-    opacity:1;
-    letter-spacing:3px;
-  }
+  from{ opacity:0; letter-spacing:8px; }
+  to{ opacity:1; letter-spacing:3px; }
 }
 
 /* =========================
@@ -216,7 +208,6 @@ body.map-page{
   align-items:center;
 }
 
-/* map container */
 .map-container{
   width:90%;
   max-width:1000px;
@@ -227,7 +218,6 @@ body.map-page{
   gap:30px;
 }
 
-/* map card */
 .map-card{
   background:rgba(140,57,75,.88);
   padding:40px;
@@ -237,15 +227,11 @@ body.map-page{
   transition:all .4s ease;
   animation:mapAppear 1s ease;
   text-align:center;
-  color:#FFE29E; /* main text same as background */
+  color:#FFE29E;
 }
 
-/* hover effect */
-.map-card:hover{
-  transform:rotate(0deg) scale(1.02);
-}
+.map-card:hover{ transform:rotate(0deg) scale(1.02); }
 
-/* map image */
 .map-card img{
   width:100%;
   max-width:850px;
@@ -253,7 +239,6 @@ body.map-page{
   box-shadow:0 10px 20px rgba(0,0,0,.25);
 }
 
-/* caption */
 .map-caption{
   margin-top:18px;
   color:#FFE29E;
@@ -261,14 +246,7 @@ body.map-page{
   letter-spacing:1px;
 }
 
-/* animation */
 @keyframes mapAppear{
-  from{
-    opacity:0;
-    transform:translateY(40px) rotate(-3deg);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0) rotate(-1deg);
-  }
+  from{ opacity:0; transform:translateY(40px) rotate(-3deg); }
+  to{ opacity:1; transform:translateY(0) rotate(-1deg); }
 }
