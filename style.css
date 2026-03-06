@@ -79,3 +79,103 @@ footer{
   border-radius:15px;
   margin-bottom:30px;
 }
+
+/* SUBPAGE BODY */
+
+body.subpage{
+  margin:0;
+  font-family:'Maiden Orange',serif;
+  background:#FFE29E;
+  color:#EB9B6A;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+
+/* PAGE TITLE */
+
+.page-title{
+  margin-top:40px;
+  font-size:42px;
+  text-align:center;
+  letter-spacing:2px;
+  animation:titleFade 1s ease;
+}
+
+
+/* MAIN CONTAINER */
+
+.subpage-container{
+  max-width:900px;
+  width:85%;
+  margin-top:30px;
+  display:flex;
+  flex-direction:column;
+  gap:35px;
+  align-items:center;
+}
+
+
+/* POSTCARD BOXES */
+
+.postcard{
+
+  background:rgba(140,57,75,.88);
+  color:#FFE29E;
+
+  padding:40px;
+  border-radius:16px;
+
+  width:100%;
+  max-width:700px;
+
+  box-shadow:0 12px 25px rgba(0,0,0,.2);
+
+  transform:rotate(-1deg);
+  transition:all .4s ease;
+
+  animation:cardAppear .9s ease;
+
+}
+
+
+/* alternating postcard tilt */
+
+.postcard:nth-child(even){
+  transform:rotate(1deg);
+}
+
+
+/* hover effect */
+
+.postcard:hover{
+  transform:rotate(0deg) scale(1.02);
+}
+
+
+/* animations */
+
+@keyframes cardAppear{
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+
+@keyframes titleFade{
+  from{
+    opacity:0;
+    letter-spacing:8px;
+  }
+  to{
+    opacity:1;
+    letter-spacing:2px;
+  }
+}
