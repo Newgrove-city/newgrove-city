@@ -25,60 +25,33 @@ body.map-page{
   display:flex;
   flex-direction:column;
   align-items:center;
-  background-color:#FFE29E;
+
+  /* FULL PAGE BACKGROUND IMAGE */
+  background-image:url('./images/grove-background-index.jpeg');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
 }
 
-/* CENTER BACKGROUND IMAGE */
+/* =========================
+   CENTER COLORED COLUMN
+   ========================= */
+
 body::before{
   content:"";
   position:fixed;
   top:0;
   left:50%;
   transform:translateX(-50%);
-  width:1200px; /* increased width */
+  width:1100px; /* width of center panel */
   height:100%;
 
-  background-image:url('./images/grove-background-index.jpeg');
-  background-repeat:no-repeat;
-  background-position:center top;
-  background-size:100% 100%;
-
-  opacity:0.7;
+  background:#FFE29E;
 
   z-index:0;
 }
 
-/* =========================
-   CENTER IMAGE VERTICAL LINES
-   ========================= */
-
-/* LEFT BORDER */
-body::after{
-  content:"";
-  position:fixed;
-  top:0;
-  left:50%;
-  transform:translateX(-600px); /* half of new image width */
-  width:8px;
-  height:100%;
-  background:rgba(140,57,75,1); /* fully opaque */
-  z-index:0;
-}
-
-/* RIGHT BORDER */
-html::after{
-  content:"";
-  position:fixed;
-  top:0;
-  left:50%;
-  transform:translateX(600px); /* half of new image width */
-  width:8px;
-  height:100%;
-  background:rgba(140,57,75,1); /* fully opaque */
-  z-index:0;
-}
-
-/* Keep page content above background */
+/* Keep content above panel */
 body > *{
   position:relative;
   z-index:1;
@@ -87,6 +60,7 @@ body > *{
 /* =========================
    NAVBAR
    ========================= */
+
 nav ul{
   display:flex;
   gap:18px;
@@ -172,6 +146,7 @@ nav a::after{
 /* =========================
    FOOTER
    ========================= */
+
 footer{
   margin-top:60px;
   background:#8C394B;
@@ -179,6 +154,7 @@ footer{
   border-radius:15px;
   margin-bottom:40px;
   font-size:1.1rem;
+  color:#FFE29E;
 }
 
 /* =========================
