@@ -27,7 +27,7 @@ body.map-page{
   align-items:center;
 
   background-image:url('./images/grove-background-index.jpeg');
-  background-size:90% auto;
+  background-size:100% auto;
   background-position:center top;
   background-repeat:no-repeat;
 }
