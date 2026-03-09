@@ -249,8 +249,8 @@ nav a::after{
   display:flex;
   flex-direction:column;
   align-items:center;
-  margin-top:40px;
   gap:30px;
+  margin-top:0; /* remove extra top margin to raise the title */
   margin-bottom:40px;
 }
 
@@ -280,14 +280,6 @@ nav a::after{
   transform:translate(-50%,-50%);
   font-size:24px;
   cursor:pointer;
-}
-
-/* MAP CAPTION */
-.map-caption{
-  margin-top:10px;
-  color:#8C394B;
-  font-size:18px;
-  text-align:center;
 }
 
 /* MAIN TEXT BOX UNDER MAP */
