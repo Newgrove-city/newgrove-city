@@ -4,7 +4,7 @@
 .site-title{
   font-size:5rem;
   color:#8C394B;
-  margin:40px 0 50px 0;   /* equal spacing */
+  margin:40px 0 50px 0;
   text-align:center;
   letter-spacing:5px;
   font-weight:700;
@@ -175,7 +175,7 @@ nav a::after{
    SUBPAGE BODY
    ========================= */
 .page-title{
-  margin:40px 0 30px 0;   /* SAME spacing as index title */
+  margin:40px 0 30px 0;
   font-size:3rem;
   text-align:center;
   letter-spacing:3px;
@@ -250,7 +250,7 @@ nav a::after{
   flex-direction:column;
   align-items:center;
   gap:30px;
-  margin-top:0; /* remove extra top margin to raise the title */
+  margin-top:0; /* raises title to match other subpages */
   margin-bottom:40px;
 }
 
@@ -285,6 +285,24 @@ nav a::after{
 /* MAIN TEXT BOX UNDER MAP */
 .map-container .postcard{
   margin-top:20px;
+}
+
+/* =========================
+   DUAL POSTCARDS (FOUNDING FAMILIES PAGE)
+   ========================= */
+.dual-postcards{
+  display:flex;
+  gap:30px;
+  justify-content:center;
+  align-items:flex-start;
+  flex-wrap:wrap; /* stacks vertically on smaller screens */
+  width:100%;
+}
+
+.dual-postcards .postcard{
+  flex:1 1 300px; /* responsive: min width 300px */
+  max-width:420px;
+  margin-top:0;
 }
 
 /* =========================
